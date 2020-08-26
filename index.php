@@ -1,18 +1,5 @@
 <?php
-
-  class user
-  {
-
-    public $ID;
-    public $nome;
-    public $cognome;
-    public $email;
-    public $età;
-
-    public function getFullName($nome , $cognome){
-      echo 'Utente: ' . $nome . ' ' . $cognome . '<br>';
-    }
-  }
+  require 'user.php';
 
   $utenti = [
     [
@@ -45,6 +32,6 @@
     $userDaStampare->cognome = $utente['cognome'];
     $userDaStampare->email = $utente['email'];
     $userDaStampare->età = $utente['età'];
-    $userDaStampare->getFullName($userDaStampare->nome , $userDaStampare->cognome);
+    $userDaStampare->getFullName();
   }
 ?>
