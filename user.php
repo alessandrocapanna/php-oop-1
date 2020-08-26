@@ -9,7 +9,7 @@ class user
   public $età;
 
   public function getFullName(){
-    echo 'Utente: ' . $this->nome . ' ' . $this->cognome . '<br>';
+    echo 'Utente: ' . $this->nome . ' ' . $this->cognome . ' email: ' . $this->email . ' eta: '. $this->età . '<br>';
   }
 }
 ?>
