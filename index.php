@@ -32,6 +32,7 @@
     $userDaStampare->cognome = $utente['cognome'];
     $userDaStampare->email = $utente['email'];
     $userDaStampare->età = $utente['età'];
-    $userDaStampare->getFullName();
+    $stampa = $userDaStampare->getFullName();
+    echo $stampa;
   }
 ?>
